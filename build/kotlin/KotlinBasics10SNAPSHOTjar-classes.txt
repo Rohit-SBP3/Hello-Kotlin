@@ -1,0 +1,1 @@
+D:\KotlinMin2Max\KotlinBasics\build\classes\kotlin\main\MainKt.class;D:\KotlinMin2Max\KotlinBasics\build\classes\kotlin\main\OperatorsKt.class;D:\KotlinMin2Max\KotlinBasics\build\classes\kotlin\main\VariablesKt.class
