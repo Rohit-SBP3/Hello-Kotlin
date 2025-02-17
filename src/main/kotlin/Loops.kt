@@ -45,6 +45,8 @@ fun main() {
 
     table(23)
 
+    table(45)
+
 }
 
 fun table(num: Int){
