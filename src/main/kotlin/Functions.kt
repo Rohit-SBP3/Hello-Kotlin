@@ -12,7 +12,7 @@ fun main(){
 }
 
 // Return type Int
-fun add(var a: Int, b: Int): Int {
+fun add( a: Int, b: Int): Int {
     return a+b
 }
 
