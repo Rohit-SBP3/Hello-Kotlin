@@ -13,6 +13,7 @@ fun main(){
 
     // Storing Function in variable
     val fn1 = :: subtract
+    // Explicitly Defining
     val fn2 : (a: Int,b: Long) -> Long = ::addition
     println(fn1(21,1) + fn2(20,4048479284029))
 
