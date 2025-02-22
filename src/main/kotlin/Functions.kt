@@ -5,6 +5,8 @@ fun main(){
     println(addThree(12,32,34))
     sayHelloToNum(5)
 
+    println(fact(6))
+
     // The value we define in function is known as parameter,
     // The value we pass is known as argument.
 
@@ -33,4 +35,9 @@ fun addThree(a: Int, b: Int, c: Int) = a + b + c
 // Default value to Pram
 fun sayHelloToNum(num: Int = 10){
     for (i in 1..num) println("Hello $i")
+}
+
+fun fact(num: Int): Int {
+    return if(num == 1)  num
+    else num * fact(num-1)
 }
