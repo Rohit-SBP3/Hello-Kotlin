@@ -32,5 +32,5 @@ fun main(){
         else -> "I don't Know"
     }
     println(res)
-    println(ani)
+    print(ani)
 }
