@@ -22,6 +22,7 @@ fun main(){
         "Horse" ->  "Animal is Horse"
         "Dog" ->  "Animal is Dog"
         "Cat" ->  "Animal is Cat"
+        "Whale" -> "Its a Whale"
         else -> "Animal is Dead"
     }
 
