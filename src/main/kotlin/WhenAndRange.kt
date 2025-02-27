@@ -11,6 +11,7 @@ fun main(){
     else println("Animal is Dead!!!!")
 
     var ani = "Whale"
+
     when(ani){
         "Horse" ->  println("Animal is Horse")
         "Dog" ->  println("Animal is Dog")
