@@ -7,6 +7,8 @@ fun main(){
 
     println(fact(6))
 
+    println("The char is Vowel? -> " + isVowel('s'))
+
     // The value we define in function is known as parameter,
     // The value we pass is known as argument.
 
@@ -40,4 +42,8 @@ fun sayHelloToNum(num: Int = 10){
 fun fact(num: Int): Int {
     return if(num == 1)  num
     else num * fact(num-1)
+}
+
+fun isVowel(c: Char): Boolean{
+    return c == 'a' || c == 'e' || c == 'i' || c == 'o'|| c == 'u'
 }
