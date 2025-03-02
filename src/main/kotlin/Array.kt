@@ -10,8 +10,12 @@ fun main(){
 
     for((i , e) in num.withIndex()) println("$i -> $e")
 
+    for(i in bigNum) println(i)
+
     println(num[5])
+
     num.set(5,402)
+
     println(num.get(5))
 
 
