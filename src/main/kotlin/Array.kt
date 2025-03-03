@@ -16,6 +16,8 @@ fun main(){
 
     num.set(5,402)
 
+    println(num[0])
+
     println(num.get(5))
 
 
