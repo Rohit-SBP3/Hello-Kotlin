@@ -19,6 +19,8 @@ fun main(){
     val b1 = Bike("Tesla", "Model 3", 50000)
     println("${b1.brand} ${b1.model} costs ${b1.price}")
 
+    val a1 = Automobile(enginePower =  100, rating = 1)
+    println("${a1.type}  ${a1.hasAirBag}  ${a1.nOfTyres}  ${a1.enginePower}  ${a1.rating}")
 
 }
 
@@ -63,4 +65,13 @@ class Bike(val brand: String, val model: String) {
     constructor(brand: String, model: String, price: Int) : this(brand, model) {
         this.price = price
     }
+}
+
+class Automobile(val type: String, val hasAirBag: Boolean, val nOfTyres: Int){
+
+    var enginePower: Int = 0
+    var rating: Int = 0
+
+    constructor(enginePower: Int, rating: Int): this("Bike", false, 2)
+
 }
