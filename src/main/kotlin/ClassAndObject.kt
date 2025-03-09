@@ -18,7 +18,7 @@ fun main(){
     p1.personDetail()
 }
 
-class Person(val name: String, var age: Int){
+private class Person(val name: String, var age: Int){
 
     fun canVote(): Boolean{
         return age > 18

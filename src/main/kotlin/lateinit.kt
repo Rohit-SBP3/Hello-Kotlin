@@ -1,10 +1,13 @@
 fun main(){
 
     val c1 = Calculator()
+
     println( c1.addition(12,47))
+    println(c1.multiply(12,2))
 
     if(c1.checkInitialization()) println(c1.message)
     else println("Message is not Initialized!")
+
 }
 
 class Calculator {
@@ -20,18 +23,22 @@ class Calculator {
     }
 
     fun addition(a: Int, b: Int): Int {
+        message = "Addition"
         return a + b
     }
 
     fun subtraction(a: Int, b: Int): Int {
+        message = "Subtraction"
         return if (a > b) a - b else b - a
     }
 
     fun multiply(a: Int, b: Int): Int {
+        message = "Multiply"
         return a * b
     }
 
     fun divide(a: Int, b: Int): Int {
+        message = "Divide"
         return if(b == 0) 0 else a / b
     }
 }
