@@ -1,6 +1,7 @@
 fun main(){
 
     val a1 = Aadmi("Marsh", 22)
+    a1.age = -10
 
 }
 
