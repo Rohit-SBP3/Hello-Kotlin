@@ -3,6 +3,10 @@ fun main(){
     // We make reference of type parent but make the object of type Child...
     // Parent can hold a reference to its child.
     // Parent can call methods of child classes (which are common).
+    // Sabka Baap h Any...
+
+    val s0: Shape = Shape()
+    println( s0.area() )
 
     val s1: Shape = Circle(4.5)
     println(s1.area())
@@ -21,7 +25,7 @@ fun calculateAreas(shapes: Array<Shape>){
     }
 }
 
-open class Shape{
+open class Shape: Any(){
     open fun area(): Double {
         return 0.0
     }
