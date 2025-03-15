@@ -26,9 +26,7 @@ fun calculateAreas(shapes: Array<Shape>){
 }
 
 open class Shape: Any(){
-    open fun area(): Double {
-        return 0.0
-    }
+    open fun area(): Double = 0.0
 }
 
 class Circle(private val radius: Double): Shape(){
@@ -42,11 +40,7 @@ class Circle(private val radius: Double): Shape(){
 class Triangle(private val base: Double, private val height: Double): Shape() {
 
     private val area = 0.5 * base * height
-
-    override fun area(): Double {
-        return super.area() + area
-    }
-
+    override fun area(): Double  = area
 }
 
 class Square(private val side: Double): Shape(){
