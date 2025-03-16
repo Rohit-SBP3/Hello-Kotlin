@@ -17,12 +17,18 @@ fun main(){
 }
 
 abstract class Message{
+
+    public var a = 10
+    private var b  = 20
+    protected var c = 30
+    internal var d = 40
+
     abstract fun info()
 }
 
 class A: Message(){
     override fun info() = println("A is public")
-    public fun secretInfo() = println("A is accessible to anyone!")
+    public fun secretInfo() = println("A is accessible to anyone! $a $c $d")
 }
 
 // internal is public within same module.
