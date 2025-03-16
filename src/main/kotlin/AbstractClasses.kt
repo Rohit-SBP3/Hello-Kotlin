@@ -1,14 +1,28 @@
+
+// Abstract Classes and dInterface...
+// Type Checking and Smart Casting... (is and as)
+
 fun main(){
+
     // In simple words abstract means Incomplete...
-    playGames(arrayOf(Cricket(), Football()))
+    playGames( arrayOf(Cricket(), Football()) )
     val p1 = Player("MSD")
     println(p1.play())
+
+    // Type checking
+    if(p1 is Player) println("p1 is player")
+
+    playGames( arrayOf( Cricket(), Football(), Cricket(), Cricket()))
+
+
 }
 
 fun playGames(games: Array<Game>){
    for (g in games){
-       println(g.play())
-       println(g.rest())
+       if(g is Football) println(g.play())
+       else {
+           (g as Play).play()
+       }
    }
 }
 
@@ -16,7 +30,7 @@ fun playGames(games: Array<Game>){
 // When you add abstract there is no need to add open
 // bcz abstracts are meant to be defined by the children.
 // You can't make instance of abstract classes...
-abstract class Game(): Play{
+abstract class Game: Play{
     // When you do not know about the methods and property of your method then
     // you define it abstract so that the child classes would re-define it.
     // ## Abstract methods and properties should be defined in the abstract classes.
