@@ -7,13 +7,19 @@ fun main(){
     // (private, public, protected and internal)
     // protected is not applicable with top level declarations.
 
-    // private class within same file.
-    // private methods and properties within same class.
+    // public class -> Everywhere
+    // public class members -> Everywhere
+
+    // internal class -> within module
+    // internal class members -> within module
+
+    // protected class -> n/a
+    // protected class members -> within subclasses
+
+    // private class -> within same file.
+    // private class members -> within same class.
     val c = C()
     c.info()
-
-    val d = D()
-    d.info()
 }
 
 abstract class Message{
