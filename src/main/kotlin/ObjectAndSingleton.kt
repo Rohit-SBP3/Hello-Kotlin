@@ -60,10 +60,8 @@ open class FullName(val name: String , val surname: String) {
 object Apple: Cloneable{
     private const val size: Int = 10
     fun properties() = println("Apple have a radius of $size cm and is Juicy")
+    override fun clone() = println("Clone Apples!")
 
-    override fun clone() {
-        println("Clone Apples!")
-    }
 }
 
 object SharingWidget{
