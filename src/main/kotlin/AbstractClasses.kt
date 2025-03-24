@@ -59,8 +59,7 @@ class Cricket: Game() {
         return "IDK"
     }
 
-    override val time: Int
-        get() = 4
+    override val time: Int get() = 4
 }
 
 class Football: Game() {
