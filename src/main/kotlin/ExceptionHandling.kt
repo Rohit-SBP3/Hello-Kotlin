@@ -46,5 +46,6 @@ fun main(){
 }
 
 fun checkNumber(num: Int): Boolean{
+    // num >= 0 && num <= 9
     return num in 0..9
 }
