@@ -22,8 +22,7 @@ fun main(){
     }
 
     for(num in nums){
-        if(checkNumber(num)){
-            println("In the Range")
+        if(checkNumber(num)){ println("In the Range")
         }else throw IllegalArgumentException("Not In Range")
     }
 
