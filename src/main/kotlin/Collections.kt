@@ -47,4 +47,9 @@ fun main(){
 
     println(nameAndAge)
 
+    //Set
+
+    val coins = setOf<Int>(1,2,5,10,20,5,2,1,10)
+    println(coins)
+
 }
