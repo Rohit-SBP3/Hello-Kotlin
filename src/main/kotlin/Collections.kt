@@ -52,4 +52,11 @@ fun main(){
     val coins = setOf<Int>(1,2,5,10,20,5,2,1,10)
     println(coins)
 
+    val rgb = mutableSetOf<String>("Red","Blue","Green")
+    rgb.add("White")
+    rgb.add("Red")
+    rgb.add("Black")
+    rgb.add("Green")
+    println(rgb)
+
 }
