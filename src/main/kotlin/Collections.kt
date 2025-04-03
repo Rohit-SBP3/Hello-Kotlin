@@ -58,4 +58,43 @@ fun main(){
     rgb.add("Green")
     println(rgb)
 
+    println()
+    println("Collection Functions")
+    println()
+
+    // Filtering (filter and filterNot)
+    val evenNumbers = numbers.filterNot { it % 2 == 0 }
+    println(evenNumbers)
+
+    // Mapping (map)
+    val names = listOf("Alice", "Bob", "Charlie")
+    val nameLengths = names.map { it.length }
+    println(nameLengths)
+
+
+    // Sorting (sorted, sortedDescending)
+    println(numbers.sorted())
+    println(numbers.sortedDescending())
+
+    // Checking Conditions (any, all, none)
+    val ages = listOf(20, 25, 30, 35)
+    println(ages.any { it > 30 })
+    println(ages.all { it > 18 })
+    println(ages.none { it < 18 })
+
+    // Grouping (groupBy)
+    val words = listOf("apple", "banana", "apricot")
+    val grouped = words.groupBy { it.first() }
+    println(grouped)
+
+    // Reduce and Fold (reduce, fold)
+    val sum = numbers.reduce { acc, num -> acc + num }
+    println(sum)
+
+
+
+
+
+
+
 }
