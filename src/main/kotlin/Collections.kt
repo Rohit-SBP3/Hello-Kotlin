@@ -59,7 +59,7 @@ fun main(){
     println(rgb)
 
     println()
-    println("Collection Functions")
+    println("Collection Functions ")
     println()
 
     // Filtering (filter and filterNot)
