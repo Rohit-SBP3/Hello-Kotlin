@@ -18,6 +18,14 @@ fun main(){
 
     println(calc(12.0,10.3,::power))
 
+    val square = operation()
+    println(square(5))
+
+}
+
+// Returning Function
+fun operation(): (Int) -> Int {
+    return { it * it }
 }
 
 fun calc(a: Double, b: Double, gn: (Double, Double) -> Double): Double{
