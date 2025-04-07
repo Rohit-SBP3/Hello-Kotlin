@@ -32,6 +32,9 @@ fun main() {
 
     val result = operate(4, 2) { x, y -> x * y }
     println(result)
+
+    val s1 = operate(15,30) {x, y -> x+y}
+    println(s1)
 }
 fun operate(a: Int, b: Int, operation: (Int, Int) -> Int): Int {
     return operation(a, b)
