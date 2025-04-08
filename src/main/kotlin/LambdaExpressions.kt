@@ -17,6 +17,7 @@ fun main() {
     println(sq(2))
 
     val simpleSq: (Int) -> Int = { it * it }
+    println(simpleSq(32))
 
     val sayHello: (String) -> Unit = {name -> println("Hello $name") }
     println(sayHello("Sneha"))
