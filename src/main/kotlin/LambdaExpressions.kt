@@ -28,8 +28,9 @@ fun main() {
         val s = 2 + 5
         "Hello Kotlin"
         3
+        345
     }
-    println(multiLineLambda)
+    println(multiLineLambda.toString())
 
     val result = operate(4, 2) { x, y -> x * y }
     println(result)
