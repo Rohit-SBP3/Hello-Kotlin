@@ -119,10 +119,6 @@ fun main(){
     println(paidUser)
 
     numbers.forEach { println( it % 2 != 0 ) }
-
-
-
-
 }
 
 data class User(val id:Int, val bill: Int, val name: String)
