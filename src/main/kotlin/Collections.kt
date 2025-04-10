@@ -91,10 +91,44 @@ fun main(){
     val sum = numbers.reduce { acc, num -> acc + num }
     println(sum)
 
+    // Diff usage of filter.....
+    //val tf = numbers.filter(::isOdd)
+    /*val tf = numbers.filter ( fun(n: Int): Boolean{
+        return n % 2 == 0
+    } )*/
+    val tf = numbers.filter { a: Int -> a % 2 == 0 }
+    println("These are odd numbers $tf")
+
+    // Map practice
+    val squares = numbers.map { it * it }
+    println(squares)
+
+    val userList = listOf<User>(
+        User(1,1000,"Roman"),
+        User(2,2000,"Rocky"),
+        User(3,900,"Raman"),
+        User(4,1240,"Ricky"),
+        User(5,1530,"Ryan")
+    )
+
+    val paidUser = userList.map {
+        if(it.bill > 1000) PaidUser(it.id,it.bill,it.name,"Premium")
+        else PaidUser(it.id,it.bill,it.name,"Standard")
+    }
+
+    println(paidUser)
+
+    numbers.forEach { println( it % 2 != 0 ) }
 
 
 
 
+}
 
+data class User(val id:Int, val bill: Int, val name: String)
 
+data class PaidUser(val id: Int, val bill: Int, val name: String, val type: String)
+
+fun isOdd(n: Int): Boolean{
+    return n % 2 != 0
 }
