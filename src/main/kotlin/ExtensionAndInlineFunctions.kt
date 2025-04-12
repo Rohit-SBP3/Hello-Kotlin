@@ -64,9 +64,8 @@ fun Int.square(): Int{
     return  this * this
 }
 
-fun String.formattedString(): String{
-    return "------------------\n$this\n------------------"
-}
+fun String.formattedString(): String = "------------------\n$this\n------------------"
+
 
 fun String.capitaliseFirstLetter(): String{
     return this.replaceFirstChar { it.uppercase() }
