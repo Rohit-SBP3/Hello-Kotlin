@@ -73,6 +73,7 @@ fun String.capitaliseFirstLetter(): String{
 
 /***
  * noinline Keyword
+ *
  * If you mark a function inline, all lambdas passed are inlined by default. But if you want to skip some:
  *
  * inline fun process(noinline onDone: () -> Unit, onStart: () -> Unit) {
@@ -86,6 +87,7 @@ fun String.capitaliseFirstLetter(): String{
 
 /***
  * Cross-inline Keyword
+ *
  * If you want to prevent return from inside a lambda, use Cross-inline.
  *
  * inline fun runTask(crossinline task: () -> Unit) {
