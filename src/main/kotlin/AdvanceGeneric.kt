@@ -1,5 +1,14 @@
 fun main(){
 
+    // * projection
+    val il = printUnknownList(listOf(1,2,3,4,5))
+    val cl = printUnknownList(listOf('A','B','C'))
+    println("$il \t $cl")
+
+    // Reified Type Parameters
+    checkType<String>("Hello")  // It's of type class kotlin.String
+    checkType<Int>("Hello")     // Not a class kotlin.Int
+
 }
 
 /***
@@ -13,15 +22,25 @@ class Producer<out T>(val value: T) {
     fun produce(): T = value
 }
 
-open class Animals {
-    fun sound() = println("Animal sound")
+class Consumer<in T> {
+    fun consume(item: T) {
+        println("Consumed $item")
+    }
 }
 
-class Dogs : Animals() {
-    fun bark() = println("Bark!")
+// Star Projections *
+fun printUnknownList(list: List<*>) {
+    for (item in list) {
+        println(item)
+    }
 }
 
-fun printAnimal(producer: Producer<Animals>) {
-    val animal = producer.produce()
-    animal.sound()
+// Reified Type Parameters (in inline functions)
+// Normally, type information is erased at runtime due to type erasure, but with reified you can retain it:
+inline fun <reified T> checkType(value: Any) {
+    if (value is T) {
+        println("It's of type ${T::class}")
+    } else {
+        println("Not a ${T::class}")
+    }
 }
