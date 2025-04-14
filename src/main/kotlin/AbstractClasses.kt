@@ -1,5 +1,5 @@
 
-// Abstract Classes and dInterface...
+// Abstract Classes and Interface...
 // Type Checking and Smart Casting... (is and as)
 
 fun main(){
