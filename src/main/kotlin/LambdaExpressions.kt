@@ -8,6 +8,14 @@ fun main() {
      * }
      *
      * val sum = {a: Int, b: Int -> a+b }
+     *
+     * There are two ways to invoke lambda expression
+     * add parenthesis after variable name - sayHello()
+     * call invoke() method - sayHello.invoke()
+     *
+     * Syntax :- 
+     * val lambda: (Datatype1, Datatype2) -> returnType = { variable1: Datatype1, variable2: Datatype2 -> methodBody }
+     *
      * */
 
     val lambda = { x: Int, y: Int -> x+y }
