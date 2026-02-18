@@ -15,6 +15,18 @@ fun main(){
     //Note: var on function parameter is not allowed.
 }
 
+// Function Literal 
+// When we assign a function to a variable, it become a function literal
+// Kotlin provides two types of function literals.
+// 1. Lambda Expression.
+// 2. Anonymous Function.
+
+//fun name (): return type{
+    //Body
+    //return statement
+//}
+
+
 // Return type Int
 fun add( a: Int, b: Int): Int {
     return a+b
