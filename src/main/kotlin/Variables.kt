@@ -2,6 +2,7 @@ fun main(){
 
     // Kotlin Docs and Kotlin Playground
     // Kotlin Koans
+    // Literals :- Constant value assigned to a variable.
 
     // Var and Val
     // Data Types: Integer(Byte, Short, Int, Long),
